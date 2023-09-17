@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>
+        Medireach 
+    </title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>protfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        .details-box {
+            width: 300px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .details-box label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .details-box input[type=text], .details-box input[type=password] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .details-box input[type=submit] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .details-box input[type=submit]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="container">
+            <div class="navbar">
+                <div class="logocintainer">
+                    <a href="indexV1.html">
+                        <img src="logo.jpg" class="logo">
+                    </a>
+                </div>
+
+                <div class="nav-items">
+                    <div><a href="#hospitals">Hospitals</a></div>
+                    <div><a href="#about">About</a></div>
+                    <div><a href="#contact">Contact Me</a></div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Professional Box for Details -->
+        <div class="details-box">
+            <form action="/submit-details" method="post">
+                <label for="hospital-id">User Id of the Hospital:</label><br>
+                <input type="text" id="hospital-id" name="hospital-id"><br>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password"><br>
+                <input type="submit" value="Sign in">
+            </form> 
+        </div>
+
+    </div>
+</body>
+</html>
